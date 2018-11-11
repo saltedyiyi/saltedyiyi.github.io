@@ -10,11 +10,11 @@
   <meta name="description" content="点这里ouo&amp;nbsp;&amp;nbsp;搞这个服务器=-=其实问了某个大佬好多好多问题 &amp;nbsp;&amp;nbsp;Debian/Ubuntu安装 ###1.导入public keyapt-key adv –keyserver 你自己的key如果错误了尝试&amp;nbsp;&amp;nbsp;apt-get install dirmngr ###2.添加Deb//Debian 9echo “deb http://re">
 <meta property="og:type" content="article">
 <meta property="og:title" content="创建Debian&#x2F;Ubuntu服务器">
-<meta property="og:url" content="https://saltedyiyi.github.io/2018/11/11/创建服务器/index.html">
+<meta property="og:url" content="https://saltedyiyi.github.io/2018/11/11/创建DebianUbuntu服务器/index.html">
 <meta property="og:site_name" content="咸鱼の博客">
 <meta property="og:description" content="点这里ouo&amp;nbsp;&amp;nbsp;搞这个服务器=-=其实问了某个大佬好多好多问题 &amp;nbsp;&amp;nbsp;Debian/Ubuntu安装 ###1.导入public keyapt-key adv –keyserver 你自己的key如果错误了尝试&amp;nbsp;&amp;nbsp;apt-get install dirmngr ###2.添加Deb//Debian 9echo “deb http://re">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-11T07:54:42.871Z">
+<meta property="og:updated_time" content="2018-11-11T07:52:58.960Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="创建Debian&#x2F;Ubuntu服务器">
 <meta name="twitter:description" content="点这里ouo&amp;nbsp;&amp;nbsp;搞这个服务器=-=其实问了某个大佬好多好多问题 &amp;nbsp;&amp;nbsp;Debian/Ubuntu安装 ###1.导入public keyapt-key adv –keyserver 你自己的key如果错误了尝试&amp;nbsp;&amp;nbsp;apt-get install dirmngr ###2.添加Deb//Debian 9echo “deb http://re">
@@ -68,9 +68,9 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-创建服务器" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-创建DebianUbuntu服务器" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/11/11/创建服务器/" class="article-date">
+    <a href="/2018/11/11/创建DebianUbuntu服务器/" class="article-date">
   <time datetime="2018-11-11T07:30:39.000Z" itemprop="datePublished">2018-11-11</time>
 </a>
     
@@ -96,13 +96,11 @@
 <p>###1.导入public key<br>apt-key adv –keyserver 你自己的key<br>如果错误了尝试<br>&nbsp;&nbsp;apt-get install dirmngr</p>
 <p>###2.添加Deb<br>//Debian 9<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> stretch/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Debian 8<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> jessie/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 14<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> trusty/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 16<br>echo “deb [ arch=amd64,arm64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> xenial/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 18<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> bionic/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list</p>
 <p>###3.更新apt包并将其安装<br>apt-get update<br>apt-get install -y mongodb-org</p>
-<p>###4.这就是在里面管理的一些命令（相信都能看得懂ouo<br>service mongod start<br>service mongod stop<br>service mongod restart</p>
-<p>###5.不用时卸载命令<br>service mongod stop<br>apt-get purge mongodb-org*<br>rm -r /var/log/mongodb<br>rm -r /var/lib/mongodb</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://saltedyiyi.github.io/2018/11/11/创建服务器/" data-id="cjocl2ybz0001fcu31aswp115" class="article-share-link">Share</a>
+      <a data-url="https://saltedyiyi.github.io/2018/11/11/创建DebianUbuntu服务器/" data-id="cjocl2ybv0000fcu3rxdxha2f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -111,19 +109,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/11/11/创建DebianUbuntu服务器/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          创建Debian/Ubuntu服务器
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/11/11/制作独立博客历程/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/11/11/创建服务器/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">制作独立博客历程</div>
+      <div class="article-nav-title">创建Debian/Ubuntu服务器</div>
     </a>
   
 </nav>

@@ -66,6 +66,48 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-创建DebianUbuntu服务器" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/11/创建DebianUbuntu服务器/" class="article-date">
+  <time datetime="2018-11-11T07:30:39.000Z" itemprop="datePublished">2018-11-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/11/创建DebianUbuntu服务器/">创建Debian/Ubuntu服务器</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><details></details></p>
+<p><summary>点这里ouo</summary><br>&nbsp;&nbsp;搞这个服务器=-=其实问了某个大佬好多好多问题</p>
+<p>&nbsp;&nbsp;Debian/Ubuntu安装</p>
+<p>###1.导入public key<br>apt-key adv –keyserver 你自己的key<br>如果错误了尝试<br>&nbsp;&nbsp;apt-get install dirmngr</p>
+<p>###2.添加Deb<br>//Debian 9<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> stretch/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Debian 8<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> jessie/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 14<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> trusty/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 16<br>echo “deb [ arch=amd64,arm64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> xenial/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 18<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> bionic/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list</p>
+<p>###3.更新apt包并将其安装<br>apt-get update<br>apt-get install -y mongodb-org</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://saltedyiyi.github.io/2018/11/11/创建DebianUbuntu服务器/" data-id="cjocl2ybv0000fcu3rxdxha2f" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-创建服务器" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/11/创建服务器/" class="article-date">
@@ -80,7 +122,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/11/创建服务器/">创建服务器</a>
+      <a class="article-title" href="/2018/11/11/创建服务器/">创建Debian/Ubuntu服务器</a>
     </h1>
   
 
@@ -88,11 +130,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p><details></details></p>
+<p><summary>点这里ouo</summary><br>&nbsp;&nbsp;搞这个服务器=-=其实问了某个大佬好多好多问题</p>
+<p>&nbsp;&nbsp;Debian/Ubuntu安装</p>
+<p>###1.导入public key<br>apt-key adv –keyserver 你自己的key<br>如果错误了尝试<br>&nbsp;&nbsp;apt-get install dirmngr</p>
+<p>###2.添加Deb<br>//Debian 9<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> stretch/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Debian 8<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> jessie/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 14<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> trusty/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 16<br>echo “deb [ arch=amd64,arm64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> xenial/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 18<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> bionic/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list</p>
+<p>###3.更新apt包并将其安装<br>apt-get update<br>apt-get install -y mongodb-org</p>
+<p>###4.这就是在里面管理的一些命令（相信都能看得懂ouo<br>service mongod start<br>service mongod stop<br>service mongod restart</p>
+<p>###5.不用时卸载命令<br>service mongod stop<br>apt-get purge mongodb-org*<br>rm -r /var/log/mongodb<br>rm -r /var/lib/mongodb</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://saltedyiyi.github.io/2018/11/11/创建服务器/" data-id="cjock9rw600001ku3btfl9ily" class="article-share-link">Share</a>
+      <a data-url="https://saltedyiyi.github.io/2018/11/11/创建服务器/" data-id="cjocl2ybz0001fcu31aswp115" class="article-share-link">Share</a>
       
       
     </footer>
@@ -129,7 +179,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://saltedyiyi.github.io/2018/11/11/制作独立博客历程/" data-id="cjock9rwb00011ku3a1is8631" class="article-share-link">Share</a>
+      <a data-url="https://saltedyiyi.github.io/2018/11/11/制作独立博客历程/" data-id="cjocl2yc10002fcu3ezngg7yx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -170,7 +220,11 @@
       <ul>
         
           <li>
-            <a href="/2018/11/11/创建服务器/">创建服务器</a>
+            <a href="/2018/11/11/创建DebianUbuntu服务器/">创建Debian/Ubuntu服务器</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/11/创建服务器/">创建Debian/Ubuntu服务器</a>
           </li>
         
           <li>
