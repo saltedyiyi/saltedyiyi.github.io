@@ -66,6 +66,42 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-科学上网" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/11/科学上网/" class="article-date">
+  <time datetime="2018-11-11T08:02:23.000Z" itemprop="datePublished">2018-11-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/11/科学上网/">科学上网</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <details><br><summary>点这里ouo</summary><br>&nbsp;&nbsp;很早很早之前我就用着别人的ss=.=,前几天终于自己买了个服务器配了个ss.<br><br>&nbsp;&nbsp;<strong>ss配置方法</strong><br>###<strong>1.首先呢肯定先要买一个国外服务器对吧,学生党阿里云或者腾讯云吧=.=</strong><br><br>###<strong>2.下载winscp</strong><br>&nbsp;&nbsp;下载地址:<strong><a href="https://winscp.net/eng/docs/lang:chs" target="_blank" rel="noopener">https://winscp.net/eng/docs/lang:chs</a></strong><br><br>###<strong>3.下载xshell</strong><br>&nbsp;&nbsp;下载地址:<strong><a href="https://www.netsarang.com/download/down_form.html?code=622" target="_blank" rel="noopener">https://www.netsarang.com/download/down_form.html?code=622</a></strong><br>&nbsp;&nbsp;根据自己情况选license type(*号必填)提交<br>&nbsp;&nbsp;然后去你填的那个email,点开第一个网址进行下载<br>&nbsp;&nbsp;输入信息的时候你就乱填吧233<br><br>###<strong>4.服务器</strong><br>&nbsp;&nbsp;买服务器的时候有你买的服务器ip地址以及key<br>&nbsp;&nbsp;在xshell和winscp上都新建会话<br>&nbsp;&nbsp;<strong>主机</strong>填<strong>ip</strong>,<strong>用户身份验证</strong>填<strong>root</strong>和<strong>密码</strong>(密码是你买服务器的时候设置的)<br>&nbsp;&nbsp;然后按照提示弄完就进行下一步(英文看不懂可以去度娘)<br><br>###<strong>5.ss配置</strong><br>&nbsp;&nbsp;在xhell上直接粘贴这个<strong>wget –no-check-certificate -O shadowsocks.sh <a href="https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh</a><br>chmod +x shadowsocks.sh<br>./shadowsocks.sh 2&gt;&amp;1 | tee shadowsocks.log</strong><br>&nbsp;&nbsp;在客户端上填写刚刚服务器那些信息(如果没有ss客户端可以去<strong><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-windows/releases</a></strong><br>&nbsp;&nbsp;按照它的提示填就ok (<strong>ouo看不懂就度娘吧</strong>)<br>&nbsp;&nbsp;<strong>端口填10000以上随便一个就ok</strong>(服务器上已经占用了一个了)<br><br><strong>然后就确定完事!点右下角ss图标(常规)开pac模式或者全局模式</strong><br>&nbsp;&nbsp;(pac模式可能部分ip被墙ouo)<br>后面就开shadowsocks的代理模式就可以科学上网了<br><br>emmm这只是个大概过程中间可能有些遗漏=-=未来再补<br><br></details>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://saltedyiyi.github.io/2018/11/11/科学上网/" data-id="cjocmyxih0002pgu34cq87xtt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-创建服务器" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/11/创建服务器/" class="article-date">
@@ -88,11 +124,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <details><br><summary>点这里ouo</summary><br>&nbsp;&nbsp;搞这个Debian/Ubuntu服务器=-=其实问了某个大佬好多好多问题<br><br>&nbsp;&nbsp;Debian/Ubuntu安装<br>###<strong>1.导入public key</strong><br>apt-key adv –keyserver 你自己的key<br>如果错误了尝试<br>&nbsp;&nbsp;apt-get install dirmngr<br>###<strong>2.添加Deb</strong><br>//Debian 9<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> stretch/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Debian 8<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> jessie/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 14<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> trusty/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 16<br>echo “deb [ arch=amd64,arm64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> xenial/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 18<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> bionic/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>###<strong>3.更新apt包并将其安装</strong><br>apt-get update<br>apt-get install -y mongodb-org<br>###<strong>4.这就是在里面管理的一些命令（相信都能看得懂ouo</strong><br>service mongod start<br>service mongod stop<br>service mongod restart<br>###5.<strong>不用时卸载命令</strong><br>service mongod stop<br>apt-get purge mongodb-org*<br>rm -r /var/log/mongodb<br>rm -r /var/lib/mongodb<br></details>
+        <details><br><summary>点这里ouo</summary><br>&nbsp;&nbsp;搞这个Debian/Ubuntu服务器=-=其实问了某个大佬好多好多问题<br><br>&nbsp;&nbsp;<strong>Debian/Ubuntu安装</strong><br>###<strong>1.导入public key</strong><br>apt-key adv –keyserver 你自己的key<br>如果错误了尝试<br>&nbsp;&nbsp;apt-get install dirmngr<br>###<strong>2.添加Deb</strong><br>//Debian 9<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> stretch/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Debian 8<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> jessie/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 14<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> trusty/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 16<br>echo “deb [ arch=amd64,arm64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> xenial/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 18<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> bionic/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>###<strong>3.更新apt包并将其安装</strong><br>apt-get update<br>apt-get install -y mongodb-org<br>###<strong>4.这就是在里面管理的一些命令（相信都能看得懂ouo</strong><br>service mongod start<br>service mongod stop<br>service mongod restart<br>###5.<strong>不用时卸载命令</strong><br>service mongod stop<br>apt-get purge mongodb-org*<br>rm -r /var/log/mongodb<br>rm -r /var/lib/mongodb<br></details>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://saltedyiyi.github.io/2018/11/11/创建服务器/" data-id="cjocl52yh0000b0u37cdusyve" class="article-share-link">Share</a>
+      <a data-url="https://saltedyiyi.github.io/2018/11/11/创建服务器/" data-id="cjocmyxif0001pgu3hpjaji7x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -129,7 +165,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://saltedyiyi.github.io/2018/11/11/制作独立博客历程/" data-id="cjocl52yu0001b0u322q7jkur" class="article-share-link">Share</a>
+      <a data-url="https://saltedyiyi.github.io/2018/11/11/制作独立博客历程/" data-id="cjocmyxi80000pgu3qab8wcfc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -168,6 +204,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/11/11/科学上网/">科学上网</a>
+          </li>
         
           <li>
             <a href="/2018/11/11/创建服务器/">创建服务器</a>

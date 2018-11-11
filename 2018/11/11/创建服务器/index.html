@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="咸鱼の博客">
 <meta property="og:description" content="点这里ouo&amp;nbsp;&amp;nbsp;搞这个Debian/Ubuntu服务器=-=其实问了某个大佬好多好多问题&amp;nbsp;&amp;nbsp;Debian/Ubuntu安装###1.导入public keyapt-key adv –keyserver 你自己的key如果错误了尝试&amp;nbsp;&amp;nbsp;apt-get install dirmngr###2.添加Deb//Debian 9echo “deb">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-11T07:59:30.304Z">
+<meta property="og:updated_time" content="2018-11-11T08:04:49.687Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="创建服务器">
 <meta name="twitter:description" content="点这里ouo&amp;nbsp;&amp;nbsp;搞这个Debian/Ubuntu服务器=-=其实问了某个大佬好多好多问题&amp;nbsp;&amp;nbsp;Debian/Ubuntu安装###1.导入public keyapt-key adv –keyserver 你自己的key如果错误了尝试&amp;nbsp;&amp;nbsp;apt-get install dirmngr###2.添加Deb//Debian 9echo “deb">
@@ -90,11 +90,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <details><br><summary>点这里ouo</summary><br>&nbsp;&nbsp;搞这个Debian/Ubuntu服务器=-=其实问了某个大佬好多好多问题<br><br>&nbsp;&nbsp;Debian/Ubuntu安装<br>###<strong>1.导入public key</strong><br>apt-key adv –keyserver 你自己的key<br>如果错误了尝试<br>&nbsp;&nbsp;apt-get install dirmngr<br>###<strong>2.添加Deb</strong><br>//Debian 9<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> stretch/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Debian 8<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> jessie/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 14<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> trusty/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 16<br>echo “deb [ arch=amd64,arm64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> xenial/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 18<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> bionic/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>###<strong>3.更新apt包并将其安装</strong><br>apt-get update<br>apt-get install -y mongodb-org<br>###<strong>4.这就是在里面管理的一些命令（相信都能看得懂ouo</strong><br>service mongod start<br>service mongod stop<br>service mongod restart<br>###5.<strong>不用时卸载命令</strong><br>service mongod stop<br>apt-get purge mongodb-org*<br>rm -r /var/log/mongodb<br>rm -r /var/lib/mongodb<br></details>
+        <details><br><summary>点这里ouo</summary><br>&nbsp;&nbsp;搞这个Debian/Ubuntu服务器=-=其实问了某个大佬好多好多问题<br><br>&nbsp;&nbsp;<strong>Debian/Ubuntu安装</strong><br>###<strong>1.导入public key</strong><br>apt-key adv –keyserver 你自己的key<br>如果错误了尝试<br>&nbsp;&nbsp;apt-get install dirmngr<br>###<strong>2.添加Deb</strong><br>//Debian 9<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> stretch/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Debian 8<br>echo “deb <a href="http://repo.mongodb.org/apt/debian" target="_blank" rel="noopener">http://repo.mongodb.org/apt/debian</a> jessie/mongodb-org/4.0 main” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 14<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> trusty/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 16<br>echo “deb [ arch=amd64,arm64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> xenial/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>//Ubuntu 18<br>echo “deb [ arch=amd64 ] <a href="https://repo.mongodb.org/apt/ubuntu" target="_blank" rel="noopener">https://repo.mongodb.org/apt/ubuntu</a> bionic/mongodb-org/4.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list<br>###<strong>3.更新apt包并将其安装</strong><br>apt-get update<br>apt-get install -y mongodb-org<br>###<strong>4.这就是在里面管理的一些命令（相信都能看得懂ouo</strong><br>service mongod start<br>service mongod stop<br>service mongod restart<br>###5.<strong>不用时卸载命令</strong><br>service mongod stop<br>apt-get purge mongodb-org*<br>rm -r /var/log/mongodb<br>rm -r /var/lib/mongodb<br></details>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://saltedyiyi.github.io/2018/11/11/创建服务器/" data-id="cjocl52yh0000b0u37cdusyve" class="article-share-link">Share</a>
+      <a data-url="https://saltedyiyi.github.io/2018/11/11/创建服务器/" data-id="cjocmyxif0001pgu3hpjaji7x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -102,6 +102,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2018/11/11/科学上网/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          科学上网
+        
+      </div>
+    </a>
   
   
     <a href="/2018/11/11/制作独立博客历程/" id="article-nav-older" class="article-nav-link-wrap">
@@ -141,6 +150,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/11/11/科学上网/">科学上网</a>
+          </li>
         
           <li>
             <a href="/2018/11/11/创建服务器/">创建服务器</a>
